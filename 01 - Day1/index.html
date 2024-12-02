@@ -1029,6 +1029,27 @@ console.log(SumDifferences());
 
 
 
+
+let result2 = 0
+let count = 0
+function SumDifferences2() {
+    let firstElements = data.map(data1 => data1[0]);
+    let secondElements = data.map(data1 => data1[1]);
+
+    for (let i = 0; i < firstElements.length; i++) {
+        count = 0
+        for (let j = 0; j < secondElements.length; j++) {
+            if (secondElements[j] === firstElements[i]) {
+                count++;
+            }
+            
+        }
+        result2 += firstElements[i] * count;
+
+    }
+    return result2;
+}
+console.log(SumDifferences2())
     </script>
 </body>
 </html>
